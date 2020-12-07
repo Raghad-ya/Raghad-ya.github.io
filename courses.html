@@ -1,0 +1,137 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>	
+<body>
+	 <div class="container">
+<div class="navbar">
+        <div class="menu">
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="main">
+          <header style="background: #19191A">
+			  <div class="overlay"></div>
+			  <div class="baci">
+		      <img src="images/تشريح معدل-01.png" width="500" height="" alt=""/> </div>
+		    <div class="row">
+				  <div class="col">
+					  <div class="feature-img">
+					 <img src="images/vip4.png" width="30%" alt=""/>
+				      <img src="images/media play-01.png" width="50" height="" alt="" class="play-btn" onclick="PlayVideo('images/vi.mp4')"/> </div>
+				  </div>
+				  <div class="col">
+					  <div class="small-omg-row1">
+					  <div class="small-img">
+					    <img src="images/vip3.png"/>
+					    <img src="images/media play-01.png" width="50" height="" alt="" class="play-btn" onclick="PlayVideo('images/vi.mp4')"/>
+					    </div>
+						  <p>في الدرس الثاني نتعرف على المدرج الموسيقي و عناصره<br> و نتعرف على النوتات الموسيقي الأساسية و الزمن المقترن<br> بكل منها. 
+
+</p>
+				    </div>
+				    <div class="small-omg-row2">
+					  <div class="small-img">
+					    <img src="images/vip6.png"/>
+						   <img src="images/media play-01.png" width="50" height="" alt="" class="play-btn" onclick="PlayVideo('images/vi.mp4')"/>
+				      </div>
+						  <p>في الدرس الثالث نتعرف على أول ثلاثة أوتار في العود<br>
+سول، لا ، ري ونطبق تمارين للتعرف على الاوتار ومكانها<br>
+في المدرج الموسيقي</p>
+				    </div>
+				    <div class="small-omg-row3">
+					  <div class="small-img">
+					    <img src="images/vip2.png"/>
+					    <img src="images/media play-01.png" width="50" height="" alt="" class="play-btn" onclick="PlayVideo('images/vi.mp4')"/>
+					  </div>
+						  <p>
+في الدرس الرابع نتعلم الوضعية الصحيحة للعزف باستخدام<br>
+اليد اليسرى وأرقام الاصابع ونطبق تمارين لتدريب اليد.</p>
+				    </div>
+				  </div>
+			  </div>
+			  
+	<div class="video-player" id="videoPlayer">
+			  <video width="100%" controls autoplay id="myVideo">
+		<source src="images/vi.mp4" alt="" type="video/mp4"/> 
+				   </video>
+		<img src="images/close media-01.png"  alt="" class="close-btn" onclick="stopVideo()"/>
+			  </div>
+         
+			  <script>
+				  var videoPlayer = document.getElementById("videoPlayer")
+				  var myVideo = document.getElementById("myVideo") 
+				  
+				  function stopVideo(){
+					  videoPlayer.style.display= "none";
+				  }
+				  
+				  function PlayVideo(file){
+					  myVideo.scr = file;
+					  videoPlayer.style.display = "block";
+				  }
+			  
+			  </script>
+		
+			  
+<div class="logo">
+	   <a href="index.html"> <img src="images/2تصميم الموقع-05.png"/></a> </div>
+			  
+			  
+		  
+          </header>
+      </div>
+	
+		   <div class="links">
+        <ul>
+          <li class="li1">
+            <a href="index.html" style="--i: 0.05s;">الرئيسية</a>
+          </li>
+          <li>
+            <a href="about.html" style="--i: 0.1s;">من نحن</a>
+          </li>
+			 <li>
+            <a href="shop.html" style="--i: 0.25s;">المتجر</a>
+          </li>
+          <li>
+            <a href="courses.html" style="--i: 0.15s;">الدورات</a>
+          </li>
+          <li>
+            <a href="services.html" style="--i: 0.2s;">مناسباتنا</a>
+          </li>
+          <li>
+            <a href="contact.html" style="--i: 0.3s;">تواصل معنا</a>
+          </li>
+        </ul>
+      </div>
+       </div>
+		  <footer>
+	<div class="footer-content">
+		<img src="images/2تصميم الموقع-05.png" width="" height="100" alt=""/>
+
+		<ul class="socials">
+		<li><a herf="#"><i class="fa fa-facebook"></i></a></li>
+		<li><a herf="#"><i class="fa fa-twitter"></i></a></li>
+		<li><a herf="#"><i class="fa fa-instagram"></i></a></li>
+		<li><a herf="#"><i class="fa fa-youtube"></i></a></li>
+		</ul>
+		    </div>
+			 <div class="footer-bottom">
+			 <p >حقوق الحفظ &copy;2020 زرياب.</p>
+			 </div>
+		 </footer>
+		 
+	<script src="app.js"></script>
+	</div>
+</body>
+</html>
+
